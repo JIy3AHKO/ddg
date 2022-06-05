@@ -179,6 +179,7 @@ int main(int argc, char** argv) {
     }
 
     MESHNAME = polyscope::guessNiceNameFromPath(filepath);
+    polyscope::options::maxFPS = 160;
 
     // Load mesh
     std::tie(mesh_uptr, geometry_uptr) = readManifoldSurfaceMesh(filepath);

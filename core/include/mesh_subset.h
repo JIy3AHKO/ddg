@@ -124,7 +124,7 @@ class MeshSubset {
     }
 
     /* Print vertices. */
-    void printVertices() {
+    void printVertices() const {
         std::cout << "Vertices: ";
         for (std::set<size_t>::iterator it = vertices.begin(); it != vertices.end(); ++it) {
             std::cout << *it << ", ";
@@ -133,7 +133,7 @@ class MeshSubset {
     }
 
     /* Print edges. */
-    void printEdges() {
+    void printEdges() const {
         std::cout << "Edges: ";
         for (std::set<size_t>::iterator it = edges.begin(); it != edges.end(); ++it) {
             std::cout << *it << ", ";
@@ -142,7 +142,7 @@ class MeshSubset {
     }
 
     /* Print Faces. */
-    void printFaces() {
+    void printFaces() const {
         std::cout << "Faces: ";
         for (std::set<size_t>::iterator it = faces.begin(); it != faces.end(); ++it) {
             std::cout << *it << ", ";
